@@ -3,10 +3,10 @@
 CSS grid, flexbox, responsive layout.
 
 Work in progress screenshot
-<img src="wip.png">
+<img src="images/wip.png">
 
 Final desktop design
-<img src="final.png">
+<img src="images/final.png">
 
 Mobile layout
-<img src="mobile.png">
+<img src="images/mobile.png">
