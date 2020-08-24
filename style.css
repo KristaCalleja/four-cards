@@ -17,13 +17,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
     background-color: var(--Very-Light-Gray);
 }
 
-h3 {
+h1, h2, h3 {
     color: var(--Very-Dark-Blue);
-    font-size: 24px;
 }
 
 img {
@@ -32,8 +30,6 @@ img {
 }
 
 .wrapper {
-    border: 1px red solid;
-
     width: 1420px;
     display: flex;
     flex-direction: column;
@@ -43,8 +39,6 @@ img {
 }
 
 .container {
-    border: 1px red solid;
-
     display: flex;
     flex-direction: column;
 }
@@ -55,14 +49,12 @@ img {
 
 .title h2 {
     font-weight: 200;
-    color: var(--Very-Dark-Blue);
     line-height: 2em;
     font-size: 32px;
 }
 
 .title h1 {
     font-weight: 600;
-    color: var(--Very-Dark-Blue);
     font-size: 40px;
 }
 
@@ -77,8 +69,6 @@ img {
 }
 
 .card-grid {
-    border: 1px green solid;
-
     display: flex;
     align-items: center;
     padding: 10px;
@@ -101,6 +91,11 @@ img {
     font-size: 16px;
     padding-top: 5px;
     line-height: 1.5em;    
+}
+
+.card h3 {
+
+    font-size: 24px;
 }
 
 .card-1 {
