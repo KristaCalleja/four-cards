@@ -73,16 +73,12 @@ img {
 /* Cards full-screen properties */
 
 .card-grid {
-    border: 1px red solid;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
 .two-card-grid {
-    border: 1px blue solid;
-
     display: flex;
     grid-gap: 16px;
     flex-direction: column;
