@@ -28,6 +28,7 @@ h3 {
 
 img {
     float: right;
+    padding-top: 20px;
 }
 
 .wrapper {
@@ -81,7 +82,6 @@ img {
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-top: 50px;
     height: 90vh;
 }
 
@@ -91,14 +91,14 @@ img {
     border: 1px blue solid;
     padding: 10px;
     align-items: flex-end;
-    height: 70%;
+    height: 60%;
     justify-content: space-evenly;
     grid-gap: 40px;
 }
 
 .card-1 p, .card-2 p, .card-3 p, .card-4 p {
     color: var(--Grayish-Blue);
-    font-size: 12px;
+    font-size: 16px;
     padding-top: 5px;
     line-height: 1.5em;    
 }
@@ -107,18 +107,19 @@ img {
     border-top-style: solid;
     border-top-color: var(--Cyan);
     flex: 1;
-    box-shadow: 0 5px 10px 5px rgba(0,0,0,.1);
+    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
     border-radius: 5px;
     padding: 30px;
     margin: auto;
     width: 300px;
-    height: 160px
+    height: 160px;
+    position: relative;
 }
 .card-2 {
     border-top-style: solid;
     border-top-color: var(--Red);
     flex: 1;
-    box-shadow: 0 15px 35px rgba(126,87,88,.1),0 5px 15px rgba(0,0,0,.07);
+    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
     border-radius: 5px;
     padding: 30px;
     margin: auto;
@@ -129,28 +130,29 @@ img {
     border-top-style: solid;
     border-top-color: var(--Orange);
     flex: 1;
-    box-shadow: 0 15px 35px rgba(126,87,88,.1),0 5px 15px rgba(0,0,0,.07);
+    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
     border-radius: 5px;
     padding: 30px;
     margin: auto;
     width: 300px;
-    height: 160px 
+    height: 160px; 
 }
 .card-4 {
     border-top-style: solid;
     border-top-color: var(--Blue);
     flex: 1;
-    box-shadow: 0 15px 35px rgba(126,87,88,.1),0 5px 15px rgba(0,0,0,.07);
+    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
     border-radius: 5px;
     padding: 30px;
     margin: auto;
     width: 300px;
-    height: 160px     
+    height: 160px;     
 }
 
 @media(max-width: 375px) {
    .wrapper {
        display: flex;
+       flex-direction:row;
        flex-wrap: wrap;
        flex-basis: 90%;
 
