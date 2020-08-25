@@ -51,7 +51,7 @@ img {
 
 .title h2 {
     font-weight: 200;
-    line-height: 2em;
+    line-height: 2;
     font-size: 32px;
 }
 
@@ -62,12 +62,9 @@ img {
 
 .tagline {
     margin-top: 15px;
-}
-
-.tagline p {
     font-weight: 400;
     color: var(--Grayish-Blue);
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 /* Cards full-screen properties */
@@ -87,16 +84,16 @@ img {
     justify-content: space-evenly;
 }
 
-.card-1 p, .card-2 p, .card-3 p, .card-4 p {
+.card p {
     color: var(--Grayish-Blue);
     font-size: 16px;
     padding-top: 5px;
-    line-height: 1.5em;    
+    line-height: 1.5;    
 }
 
-.card-1 {
+/* Styles shared by all cards */
+.card {
     border-top-style: solid;
-    border-top-color: var(--Cyan);
     flex: 1;
     box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
     border-radius: 5px;
@@ -104,45 +101,27 @@ img {
     margin: auto;
     width: 300px;
     height: 160px;
+}
+
+/* Styles unique to each card */
+.card-1 {
+    border-top-color: var(--Cyan);
     position: relative;
 }
 .card-2 {
-    border-top-style: solid;
     border-top-color: var(--Red);
-    flex: 1;
-    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
-    border-radius: 5px;
-    padding: 30px;
-    margin: auto;
-    width: 300px;
-    height: 160px;
 }
+
 .card-3 {
-    border-top-style: solid;
-    border-top-color: var(--Orange);
-    flex: 1;
-    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
-    border-radius: 5px;
-    padding: 30px;
-    margin: auto;
-    width: 300px;
-    height: 160px; 
+    border-top-color: var(--Orange); 
 }
 .card-4 {
-    border-top-style: solid;
-    border-top-color: var(--Blue);
-    flex: 1;
-    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
-    border-radius: 5px;
-    padding: 30px;
-    margin: auto;
-    width: 300px;
-    height: 160px;     
+    border-top-color: var(--Blue);    
 }
 
 /* Layout for mobile */
 
-@media(max-width: 375px) {
+@media(max-width: 520px) {
    .card-grid {
        grid-template-columns: 1fr;
    }
