@@ -21,20 +21,56 @@ h1, h2, h3, p {
 }
 .wrapper {
     border: 1px black solid;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;   
 }
-
 /* Text-box properties */
-.container {
+.text-container {
     border: 1px red solid;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 72px;
 }
+.card-grid {
+    border: 1px violet solid;
+    display: flex;
+    flex-direction: column;
+}
+.two-card-grid {
+    border: 1px green solid;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2em;
+    padding: 1em;
+}
+/* Styles shared by all cards */
+.card {
+    border-top-style: solid;
+    box-shadow: 0 2px 9px 0px rgba(50,50,200,.42);
+    border-radius: 7px;
+    padding: 2.6em 2.5em;
+    max-width: 300px;
+}
+/* Styles unique to each card */
+.card-1 {
+    border-top-color: var(--Cyan);
+    position: relative;
+}
+.card-2 {
+    border-top-color: var(--Red);
+}
+
+.card-3 {
+    border-top-color: var(--Orange); 
+}
+.card-4 {
+    border-top-color: var(--Blue);    
+}
+/* Typography */
 h2 {
     font-weight: 200;
     line-height: 2;
@@ -51,34 +87,11 @@ p {
     line-height: 1.5;
 }
 
-
-
-
-
 /* Box related items */
 img:only-of-type {
     float: right;
     padding-top: 20px;
 }
-
-
-/* Cards full-screen properties */
-
-.card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-}
-
-.two-card-grid {
-    display: flex;
-    grid-gap: 16px;
-    flex-direction: column;
-    padding: 10px;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-
 .card p {
     color: var(--Grayish-Blue);
     font-size: 16px;
@@ -86,38 +99,16 @@ img:only-of-type {
     line-height: 1.5;    
 }
 
-/* Styles shared by all cards */
-.card {
-    border-top-style: solid;
-    flex: 1;
-    box-shadow: 0 2px 8px 0px rgba(50,50,200,.42);
-    border-radius: 5px;
-    padding: 30px;
-    margin: auto;
-    width: 300px;
-    height: 160px;
-}
 
-/* Styles unique to each card */
-.card-1 {
-    border-top-color: var(--Cyan);
-    position: relative;
-}
-.card-2 {
-    border-top-color: var(--Red);
-}
 
-.card-3 {
-    border-top-color: var(--Orange); 
-}
-.card-4 {
-    border-top-color: var(--Blue);    
-}
 
-/* Layout for mobile */
-
-@media(max-width: 520px) {
-   .card-grid {
-       grid-template-columns: 1fr;
-   }
+/* Layout for desktop */
+@media(min-width: 900px) {
+    .text-container{
+        margin-bottom: 64px;
+    }
+    .card-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
