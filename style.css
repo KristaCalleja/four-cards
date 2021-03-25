@@ -44,7 +44,7 @@ h1, h2, h3, p {
     align-items: center;
 }
 .two-card-grid {
-    border: 1px green solid;
+    border: 1px green brown;
     display: flex;
     flex-direction: column;
     flex: 1;
