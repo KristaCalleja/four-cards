@@ -98,4 +98,8 @@ img:only-of-type {
         "card-1 ..... card-3"
         ".... card-4 ...."
     }
+    .attribution{
+        margin-top: 6em;
+        text-align: center;
+    }
 }
