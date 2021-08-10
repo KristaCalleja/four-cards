@@ -11,6 +11,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -34,7 +35,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS Grid-template-areas
 - Mobile-first workflow
 
 ### What I learned
@@ -43,7 +44,11 @@ I first started this project in August 2020 and I am finally submitting it 12 mo
 
 ### Continued development
 
-I still have one issue to solve with the last div in this challenge. Once I figure it out I will re-submit the solution. 
+When I first submitted my solution I still hadn't positioned the divs properly in the desktop design. With help from the FEM community it was suggested that I use grid-areas and after some reading I tried it out and it solved my problem. 
+
+### Useful resources
+
+- [Kevin Powell's Why CSS grid-area is the best property for laying out content](https://youtu.be/duH4DLq5yoo) - It is indeed the best property!
 
 ## Author
 
@@ -54,3 +59,4 @@ I still have one issue to solve with the last div in this challenge. Once I figu
 ## Acknowledgments
 
 A member of the FEM slack community helped me figure out how to give separate colour borders to the divs. Thanks go to Emma-duru!
+Upon my first submission, Chamu from the Slack community helped me try out grid-areas to fix my grid. Worked like a charm! Thank you!

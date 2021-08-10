@@ -64,18 +64,21 @@ p{
 /* Styles unique to each card */
 .card-1 {
     border-top-color: var(--Cyan);
+    grid-area: card-1;
 }
 .card-2 {
     border-top-color: var(--Red);
     grid-gap: 2em;
+    grid-area: card-2;
 }
 .card-3 {
     border-top-color: var(--Orange);
     padding-right: 1.5em;
-
+    grid-area: card-3;
 }
 .card-4 {
     border-top-color: var(--Blue);
+    grid-area: card-4;
 }
 img:only-of-type {
     float: right;
@@ -83,12 +86,16 @@ img:only-of-type {
 }
 /* Layout for desktop */
 @media(min-width: 900px) {
+    .card{
+        margin-bottom: -100px;
+    }
     .card-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1.5em;
-    }
-    .card:nth-of-type(odd){
-        margin-top: 200px;
+        grid-template-areas: 
+        ".... card-2 ...."
+        "card-1 ..... card-3"
+        ".... card-4 ...."
     }
 }
