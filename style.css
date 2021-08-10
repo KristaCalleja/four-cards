@@ -33,7 +33,6 @@ p{
     color: var(--Grayish-Blue);
 }
 .wrapper {
-    border: 1px red solid;
     padding: 3em 2em;
     display: flex;
     flex-direction: column;
@@ -41,7 +40,6 @@ p{
     align-items: center;
 }
 .text-container {
-    border: 1px black solid;
     max-width: 510px;
     padding: 0 2.5em;
     text-align: center;
